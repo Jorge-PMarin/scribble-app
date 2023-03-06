@@ -1,0 +1,110 @@
+@use '../base/variables';
+
+.userbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 6%;
+  border-bottom: 0.1rem solid variables.$light-gray;
+
+  a:visited,
+  a:link {
+    color: variables.$very-dark-blue;
+    text-decoration: none;
+  }
+
+  &__right {
+    &__logo {
+      font-size: 3rem;
+      color: variables.$very-dark-blue;
+    }
+
+    &__search {
+      display: none;
+    }
+  }
+
+  & img {
+    display: block;
+    max-width: 100%;
+    width: 3.8rem;
+    border-radius: 10rem;
+    border: 0.1rem solid variables.$light-gray;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    & > *:not(:last-child) {
+      margin-right: 3rem;
+    }
+
+    &__search i,
+    &__write i {
+      font-size: 2.2rem;
+      cursor: pointer;
+    }
+
+    &__write {
+      cursor: pointer;
+      & span {
+        margin-left: 0.5rem;
+      }
+      color: variables.$light-brown;
+    }
+
+    &__user {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+
+      & i {
+        color: lighten(variables.$light-brown, 20%);
+
+        &:hover {
+            color: variables.$light-brown;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .userbar {
+    &__right {
+      display: flex;
+      align-items: center;
+      &__search {
+        display: block;
+      }
+
+      &__search {
+        display: flex;
+        margin-left: 2rem;
+
+        & i {
+          background-color: variables.$light-gray;
+          border-radius: 10rem 0 0 10rem;
+          padding: 1.3rem;
+          color: darken(variables.$light-gray, 20%);
+        }
+      }
+
+      &__input {
+        border: none;
+        border-radius: 0 10rem 10rem 0;
+        background-color: variables.$light-gray;
+        font-size: 1.4rem;
+        outline: none;
+      }
+    }
+
+    &__left {
+      &__search {
+        display: none;
+      }
+    }
+  }
+}

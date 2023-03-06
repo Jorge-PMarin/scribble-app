@@ -1,0 +1,19 @@
+.homepage__posts {
+}
+
+.homepage__body {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 920px) {
+  .homepage {
+    &__body {
+      flex-direction: row;
+    }
+
+    &__posts {
+        width: 70%;
+    }
+  }
+}

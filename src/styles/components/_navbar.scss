@@ -1,0 +1,90 @@
+@use '../base/variables';
+
+.navbar {
+  background-color: variables.$light-brown;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 6%;
+  border-bottom: 0.1rem solid variables.$very-dark-blue;
+
+  & a:visited,
+  & a:link {
+    color: variables.$very-dark-blue;
+    text-decoration: none;
+  }
+
+  &__left {
+    font-size: 2rem;
+    font-weight: 700;
+
+    &__logo {
+      display: flex;
+      align-items: center;
+
+      & i {
+        font-size: 3rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__right {
+    &__item {
+      cursor: pointer;
+      display: none;
+
+      & a:hover {
+        color: variables.$dark-blue;
+      }
+    }
+
+    &__btn {
+      padding: 1rem 1.5rem;
+      border-radius: 100px;
+      border: none;
+      background-color: variables.$dark-blue;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 300;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .navbar {
+    &__left__logo {
+      font-size: 2rem;
+    }
+    &__right {
+      display: flex;
+      align-items: center;
+
+      &__item:last-child {
+        display: block;
+        margin-right: 2rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (min-width: 745px) {
+  .navbar {
+    &__right {
+      &__list {
+        display: flex;
+        list-style: none;
+      }
+
+      &__item {
+        display: block;
+        cursor: pointer;
+        &:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+}

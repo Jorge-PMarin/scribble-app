@@ -1,0 +1,21 @@
+@use '../base/variables';
+
+.category {
+  display: inline-block;
+  border: 0.1rem solid lighten(variables.$dark-blue, 50%);
+  padding: 0.6rem 1rem;
+  margin: 0 1rem 1rem 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: variables.$light-gray;
+  }
+
+  a {
+    &:visited,
+    &:link {
+      text-decoration: none;
+      color: variables.$dark-blue;
+    }
+  }
+}

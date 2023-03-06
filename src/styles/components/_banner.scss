@@ -1,0 +1,65 @@
+@use '../base/variables';
+
+.banner {
+  padding: 8rem 6%;
+  background-color: variables.$light-brown;
+  background-size: cover;
+  border-bottom: 0.1rem solid variables.$very-dark-blue;
+  position: relative;
+  overflow: hidden;
+
+  &__header {
+    font-family: 'PT Serif', serif;
+    font-size: 6rem;
+    font-weight: 600;
+    color: variables.$very-dark-blue;
+    max-width: 45rem;
+  }
+
+  &__subheader {
+    font-weight: 400;
+    color: variables.$very-dark-blue;
+    margin-bottom: 4rem;
+  }
+
+  &__btn {
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 10rem;
+    background-color: variables.$very-dark-blue;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(variables.$very-dark-blue, 10%);
+    }
+  }
+
+  &__img {
+    width: 55%;
+    opacity: 0.5;
+    position: absolute;
+    bottom: -2rem;
+    right: -3rem;
+    rotate: 30deg;
+  }
+}
+
+@media (min-width: 550px) {
+  .banner__header {
+    font-size: 7rem;
+  }
+
+  .banner__subheader {
+    font-size: 2.2rem;
+    max-width: 45rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .banner__header {
+    font-size: 9rem;
+    max-width: 60rem;
+  }
+}
