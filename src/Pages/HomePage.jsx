@@ -1,5 +1,6 @@
 import Banner from '../components/Banner';
 import SideBar from '../components/SideBar';
+import Post from '../components/Post';
 
 export default function HomePage() {
   return (
@@ -7,7 +8,10 @@ export default function HomePage() {
       <Banner />
       <div className="homepage__body">
         <div className="homepage__posts">
-          posts
+          <Post />
+          <Post />
+          <Post />
+          <Post />
         </div>
         <SideBar />
       </div>

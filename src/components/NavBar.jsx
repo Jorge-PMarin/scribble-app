@@ -1,6 +1,6 @@
 export default function NavBar() {
   return (
-    <div className="navbar">
+    <header className="navbar">
       <div className="navbar__left">
         <a href="#" className="navbar__left__logo">
           <i className="fa-sharp fa-solid fa-mug-saucer"></i>
@@ -8,7 +8,7 @@ export default function NavBar() {
         </a>
       </div>
 
-      <div className="navbar__right">
+      <nav className="navbar__right">
         <ul className="navbar__right__list">
           <li className="navbar__right__item">
             <a href="#">Our story</a>
@@ -24,7 +24,7 @@ export default function NavBar() {
           </li>
         </ul>
         <button className="navbar__right__btn">Get started</button>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }
