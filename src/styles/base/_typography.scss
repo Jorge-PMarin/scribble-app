@@ -45,24 +45,30 @@ body {
 }
 
 .singlePost {
-  
- &__info {
-  &__username {
-    font-size: 1.5rem;
+  &__info {
+    &__username {
+      font-size: 1.5rem;
+    }
+
+    &__date {
+      font-size: 1.4rem;
+    }
   }
 
-  &__date {
-    font-size: 1.4rem;
+  &__content {
+    &__text {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
   }
+}
 
- }
-
- &__content {
-  &__text {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+.write {
+  &__form {
+    &__title {
+      font-size: 3.2rem;
+    }
   }
- }
 }
 
 @media (min-width: 800px) {
