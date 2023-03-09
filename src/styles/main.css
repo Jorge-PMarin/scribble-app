@@ -336,27 +336,41 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
 }
-
 .post__left__title {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-
 .post__left__date {
   font-size: 1.3rem;
 }
-
 .post__left__category {
   font-size: 1.2rem;
 }
-
 .post__left__description {
   font-size: 1.4rem;
+}
+
+.singlePost__info__username {
+  font-size: 1.5rem;
+}
+.singlePost__info__date {
+  font-size: 1.4rem;
+}
+.singlePost__content__text {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 
 @media (min-width: 800px) {
   .post__left__title {
     font-size: 2.2rem;
+  }
+  .singlePost__content__title {
+    font-size: 3.6rem;
+  }
+  .singlePost__content__text {
+    font-size: 1.7rem;
+    line-height: 2.8rem;
   }
 }
 .navbar {
@@ -442,7 +456,7 @@ body {
     flex-direction: row;
   }
   .homepage__posts {
-    width: 70%;
+    flex: 2;
   }
 }
 .userbar {
@@ -588,6 +602,9 @@ body {
     max-width: 60rem;
   }
 }
+.sidebar {
+  display: none;
+}
 .sidebar__categories {
   padding: 3rem 2rem;
   border-bottom: 0.1rem solid #3f4e4f;
@@ -599,7 +616,8 @@ body {
 
 @media (min-width: 920px) {
   .sidebar {
-    width: 30%;
+    display: block;
+    flex: 1;
   }
   .sidebar__categories {
     border-bottom: none;
@@ -710,4 +728,66 @@ body {
   .post__left__title {
     line-height: 2.8rem;
   }
+}
+.postPage {
+  display: flex;
+}
+
+.singlePost {
+  flex: 2;
+  padding: 4rem 2.5rem;
+}
+.singlePost img {
+  display: block;
+  max-width: 100%;
+}
+.singlePost a:link, .singlePost a:visited {
+  text-decoration: none;
+  color: #2c3639;
+}
+.singlePost__info {
+  display: flex;
+  align-items: center;
+}
+.singlePost__info__avatar {
+  width: 4.8rem;
+  border-radius: 10rem;
+  display: inline-block;
+  max-width: 100%;
+  margin-right: 1.2rem;
+}
+.singlePost__info__text {
+  display: inline-block;
+}
+.singlePost__info__username {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+.singlePost__info__date {
+  color: #3f4e4f;
+}
+.singlePost__info__share {
+  display: inline-block;
+  margin-left: auto;
+}
+.singlePost__info__icon {
+  font-size: 1.8rem;
+  color: #799394;
+  cursor: pointer;
+}
+.singlePost__info__icon:not(:last-child) {
+  margin-right: 2rem;
+}
+.singlePost__info__icon:hover {
+  color: #3f4e4f;
+}
+.singlePost__content__title {
+  color: #2c3639;
+}
+.singlePost__content__img {
+  margin-bottom: 3rem;
+}
+.singlePost__content__text {
+  color: #2c3639;
 }/*# sourceMappingURL=main.css.map */

@@ -11,10 +11,11 @@
   .homepage {
     &__body {
       flex-direction: row;
+      
     }
 
     &__posts {
-      width: 70%;
+      flex: 2;
     }
   }
 }

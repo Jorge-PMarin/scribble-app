@@ -1,6 +1,7 @@
 @use '../base/variables';
 
 .sidebar {
+  display: none;
   &__categories {
     padding: 3rem 2rem;
     border-bottom: 0.1rem solid variables.$dark-blue;
@@ -14,10 +15,11 @@
 
 @media (min-width: 920px) {
   .sidebar {
-    width: 30%;
-    
+    display: block;
+    flex: 1;
+
     &__categories {
-        border-bottom: none;
+      border-bottom: none;
     }
   }
 }

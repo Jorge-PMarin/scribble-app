@@ -1,0 +1,74 @@
+@use '../base/variables';
+
+.singlePost {
+  flex: 2;
+  padding: 4rem 2.5rem;
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  & a:link,
+  & a:visited {
+    text-decoration: none;
+    color: variables.$very-dark-blue;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+
+    &__avatar {
+      width: 4.8rem;
+      border-radius: 10rem;
+      display: inline-block;
+      max-width: 100%;
+      margin-right: 1.2rem;
+    }
+
+    &__text {
+      display: inline-block;
+    }
+
+    &__username {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+    }
+
+    &__date {
+      color: variables.$dark-blue;
+    }
+
+    &__share {
+      display: inline-block;
+      margin-left: auto;
+    }
+
+    &__icon {
+      font-size: 1.8rem;
+      color: lighten(variables.$dark-blue, 25%);
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+      &:hover {
+        color: variables.$dark-blue;
+      }
+    }
+  }
+
+  &__content {
+    &__title {
+      color: variables.$very-dark-blue;
+    }
+    &__img {
+      margin-bottom: 3rem;
+    }
+
+    &__text {
+      color: variables.$very-dark-blue;
+    }
+  }
+}
