@@ -1,5 +1,6 @@
 import TextareaAutosize from 'react-textarea-autosize';
 import imgURL from '../../public/notebookOnTable.jpg';
+import Button from './Button';
 
 export default function Write() {
   return (
@@ -27,7 +28,8 @@ export default function Write() {
             placeholder="Tell your story..."
           />
         </div>
-        <button className="write__form__btn">Publish</button>
+        {/* <button className="write__form__btn">Publish</button> */}
+        <Button buttonText={'Publish!'} />
       </form>
     </main>
   );

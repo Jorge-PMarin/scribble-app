@@ -911,3 +911,14 @@ body {
     padding: 2rem;
   }
 }
+.button {
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #a27b5c;
+  cursor: pointer;
+  color: #fff;
+}
+.button:hover {
+  background-color: #926f53;
+}

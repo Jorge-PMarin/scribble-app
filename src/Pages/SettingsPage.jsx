@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import imgUrl from '../../public/anonymousUser.png';
 import SideBar from '../components/SideBar';
+import Button from '../components/Button';
 
 export default function SettingsPage() {
   const [formData, setFormData] = useState({
@@ -119,7 +120,7 @@ export default function SettingsPage() {
             />
           </div>
 
-          <button type="submit">Update</button>
+          <Button buttonText={'Update'} />
         </form>
       </main>
       <SideBar />
