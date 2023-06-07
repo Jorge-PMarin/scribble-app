@@ -72,8 +72,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -706,8 +705,7 @@ body {
 }
 .post__right__img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (min-width: 500px) {
@@ -835,8 +833,7 @@ body {
   display: block;
   width: 100%;
   max-height: 50rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-bottom: 3rem;
   border-radius: 1rem;
 }
@@ -856,4 +853,61 @@ body {
   background-color: #a27b5c;
   cursor: pointer;
   color: #fff;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.settings {
+  padding: 2rem 6%;
+}
+.settings__top {
+  margin-bottom: 2rem;
+}
+.settings__top__title {
+  color: #2c3639;
+}
+.settings__top__delete {
+  color: #a27b5c;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.settings__form__preview {
+  display: inline-block;
+  max-width: 10rem;
+  border-radius: 2rem;
+}
+.settings__form__group:first-child {
+  display: flex;
+  align-items: center;
+}
+.settings__form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.settings__form__upload {
+  margin-left: 2rem;
+  font-size: 2rem;
+  color: #3f4e4f;
+}
+.settings__form__label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #2c3639;
+}
+.settings__form__input {
+  border: none;
+  border-bottom: 0.1rem solid #dcd7c9;
+  width: 100%;
+}
+.settings__form__input:focus {
+  outline: none;
+  border-bottom: 0.1rem solid #3f4e4f;
+}
+
+@media (min-width: 920px) {
+  .settingsPage {
+    display: flex;
+  }
+  .settings {
+    flex: 1.5;
+    padding: 2rem;
+  }
+}

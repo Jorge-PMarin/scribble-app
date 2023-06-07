@@ -25,7 +25,7 @@ export default function UserBar() {
 
         <div className="userbar__left__user">
           <img
-            src=".././public/anonymousUser.png"
+            src="/anonymousUser.png"
             alt="avatar picture"
             className="userbar__left__avatar"
           />
