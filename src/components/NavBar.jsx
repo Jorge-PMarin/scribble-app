@@ -1,4 +1,9 @@
+import { useState } from 'react';
+import Popup from './Popup';
+
 export default function NavBar() {
+  const [popupIsOpen, setPopupIsOpen] = useState(false);
+
   return (
     <header className="navbar">
       <div className="navbar__left">
@@ -23,8 +28,19 @@ export default function NavBar() {
             <a href="#">Sign in</a>
           </li>
         </ul>
-        <button className="navbar__right__btn">Get started</button>
+        <button
+          className="navbar__right__btn"
+          onClick={() => setPopupIsOpen(true)}
+        >
+          Get started
+        </button>
       </nav>
+
+      {popupIsOpen && (
+        <Popup setPopupIsOpen={setPopupIsOpen}>
+          <h1>working</h1>
+        </Popup>
+      )}
     </header>
   );
 }

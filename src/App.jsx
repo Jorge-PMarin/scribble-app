@@ -5,12 +5,13 @@ import PostPage from './Pages/PostPage';
 import Write from './components/write';
 import UserBar from './components/UserBar';
 import SettingsPage from './Pages/SettingsPage';
+import Popup from './components/Popup';
 
 function App() {
   return (
     <>
-      <UserBar/>
-      <SettingsPage/>
+      <NavBar />
+      <SettingsPage />
     </>
   );
 }
