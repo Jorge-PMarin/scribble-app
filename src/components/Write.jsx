@@ -28,8 +28,7 @@ export default function Write() {
             placeholder="Tell your story..."
           />
         </div>
-        {/* <button className="write__form__btn">Publish</button> */}
-        <Button buttonText={'Publish!'} />
+        <Button>Publish</Button>
       </form>
     </main>
   );

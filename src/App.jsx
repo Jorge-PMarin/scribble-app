@@ -6,12 +6,13 @@ import Write from './components/write';
 import UserBar from './components/UserBar';
 import SettingsPage from './Pages/SettingsPage';
 import Popup from './components/Popup';
+import SignupForm from './components/signupForm';
 
 function App() {
   return (
     <>
       <NavBar />
-      <SettingsPage />
+      <SignupForm/>
     </>
   );
 }

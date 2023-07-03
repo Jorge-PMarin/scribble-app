@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Popup from './Popup';
+import SignupForm from './signupForm';
 
 export default function NavBar() {
   const [popupIsOpen, setPopupIsOpen] = useState(false);
@@ -38,7 +39,7 @@ export default function NavBar() {
 
       {popupIsOpen && (
         <Popup setPopupIsOpen={setPopupIsOpen}>
-          <h1>working</h1>
+          <SignupForm />
         </Popup>
       )}
     </header>

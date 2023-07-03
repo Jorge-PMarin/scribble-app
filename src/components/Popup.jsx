@@ -1,3 +1,5 @@
+
+
 export default function Popup({ setPopupIsOpen, children }) {
   {
     /*  when the user clicks anywhere outside of the modal, it closes */
@@ -15,6 +17,9 @@ export default function Popup({ setPopupIsOpen, children }) {
           <i className="fa-solid fa-xmark"></i>
         </button>
         {children}
+        {/* <p className="popup__sign">{
+          children.type.name === "Signupform" ? 'ho' : 'hi'
+        }</p> */}
       </div>
     </div>
   );

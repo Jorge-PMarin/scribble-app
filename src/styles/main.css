@@ -965,5 +965,35 @@ body {
 @media (min-width: 900px) {
   .popup__content {
     height: 70rem;
+    width: 90%;
   }
+}
+.signupForm {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.signupForm__heading {
+  font-size: 3.4rem;
+}
+.signupForm__group {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-bottom: 1.8rem;
+}
+.signupForm__label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.signupForm input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 0.1rem solid #dcd7c9;
+}
+.signupForm__error {
+  font-size: 1.4rem;
+  position: absolute;
+  color: red;
+  bottom: 0;
+  left: 0;
 }
