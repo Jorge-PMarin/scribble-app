@@ -1,5 +1,5 @@
-import anonymousUser from '../../public/anonymousUser.png';
-import postImgUrl from '../../public/notebookOnTable.jpg';
+import anonymousUser from "../../public/anonymousUser.png";
+import postImgUrl from "../../public/notebookOnTable.jpg";
 
 export default function SinglePost() {
   return (

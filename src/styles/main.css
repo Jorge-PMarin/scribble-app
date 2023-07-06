@@ -407,7 +407,7 @@ body {
 .navbar__right__item a:hover {
   color: #3f4e4f;
 }
-.navbar__right__btn {
+.navbar__signup {
   padding: 1rem 1.5rem;
   border-radius: 100px;
   border: none;
@@ -416,6 +416,15 @@ body {
   cursor: pointer;
   font-weight: 300;
   font-size: 1.5rem;
+}
+.navbar__signin {
+  border: none;
+  background-color: transparent;
+  color: #2c3639;
+  cursor: pointer;
+}
+.navbar__signin:hover {
+  color: #3f4e4f;
 }
 
 @media (min-width: 550px) {
@@ -946,6 +955,9 @@ body {
   max-width: 70rem;
   box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.75);
 }
+.popup__content__icon {
+  pointer-events: none;
+}
 .popup__close {
   border: none;
   background-color: transparent;
@@ -991,6 +1003,36 @@ body {
   border: 0.1rem solid #dcd7c9;
 }
 .signupForm__error {
+  font-size: 1.4rem;
+  position: absolute;
+  color: red;
+  bottom: 0;
+  left: 0;
+}
+
+.signinForm {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.signinForm__heading {
+  font-size: 3.4rem;
+}
+.signinForm__group {
+  position: relative;
+  padding-bottom: 1.8rem;
+  margin-bottom: 1rem;
+}
+.signinForm__label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.signinForm input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 0.1rem solid #dcd7c9;
+}
+.signinForm__error {
   font-size: 1.4rem;
   position: absolute;
   color: red;

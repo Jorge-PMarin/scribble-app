@@ -1,6 +1,6 @@
 @use "../base/variables";
 
-.signupForm {
+.signinForm {
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -11,8 +11,8 @@
 
   &__group {
     position: relative;
-    margin-bottom: 1rem;
     padding-bottom: 1.8rem;
+    margin-bottom: 1rem;
   }
 
   &__label {

@@ -1,4 +1,4 @@
-@use '../base/variables';
+@use "../base/variables";
 
 .navbar {
   background-color: variables.$light-brown;
@@ -38,16 +38,27 @@
         color: variables.$dark-blue;
       }
     }
+  }
 
-    &__btn {
-      padding: 1rem 1.5rem;
-      border-radius: 100px;
-      border: none;
-      background-color: variables.$dark-blue;
-      color: #fff;
-      cursor: pointer;
-      font-weight: 300;
-      font-size: 1.5rem;
+  &__signup {
+    padding: 1rem 1.5rem;
+    border-radius: 100px;
+    border: none;
+    background-color: variables.$dark-blue;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+  &__signin {
+    border: none;
+    background-color: transparent;
+    color: variables.$very-dark-blue;
+    cursor: pointer;
+
+    &:hover {
+      color: variables.$dark-blue;
     }
   }
 }

@@ -1,25 +1,28 @@
-
-
-export default function Popup({ setPopupIsOpen, children }) {
+export default function Popup({ setSignupIsOpen, setSigninIsOpen, children }) {
   {
     /*  when the user clicks anywhere outside of the modal, it closes */
   }
   function handleClick(e) {
-    if (e.target.className == 'popup') {
-      setPopupIsOpen(false);
+    if (
+      (e.target.className == "popup" || e.target.className == "popup__close") &&
+      setSigninIsOpen
+    ) {
+      setSigninIsOpen(false);
+    } else if (
+      (e.target.className == "popup" || e.target.className == "popup__close") &&
+      setSignupIsOpen
+    ) {
+      setSignupIsOpen(false);
     }
   }
 
   return (
     <div className="popup" onClick={handleClick}>
       <div className="popup__content">
-        <button className="popup__close" onClick={() => setPopupIsOpen(false)}>
-          <i className="fa-solid fa-xmark"></i>
+        <button className="popup__close" onClick={handleClick}>
+          <i className="fa-solid fa-xmark popup__content__icon"></i>
         </button>
         {children}
-        {/* <p className="popup__sign">{
-          children.type.name === "Signupform" ? 'ho' : 'hi'
-        }</p> */}
       </div>
     </div>
   );

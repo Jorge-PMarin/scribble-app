@@ -1,9 +1,11 @@
-import { useState } from 'react';
-import Popup from './Popup';
-import SignupForm from './signupForm';
+import { useState } from "react";
+import Popup from "./Popup";
+import SignupForm from "./signupForm";
+import SigninForm from "./SigninForm";
 
 export default function NavBar() {
-  const [popupIsOpen, setPopupIsOpen] = useState(false);
+  const [signupIsOpen, setSignupIsOpen] = useState(false);
+  const [signinIsOpen, setSigninIsOpen] = useState(false);
 
   return (
     <header className="navbar">
@@ -23,23 +25,34 @@ export default function NavBar() {
             <a href="#">Membership</a>
           </li>
           <li className="navbar__right__item">
-            <a href="#">Writte</a>
+            <a href="#">Write</a>
           </li>
           <li className="navbar__right__item">
-            <a href="#">Sign in</a>
+            <button
+              className="navbar__signin"
+              onClick={() => setSigninIsOpen(true)}
+            >
+              Sign In
+            </button>
           </li>
         </ul>
         <button
-          className="navbar__right__btn"
-          onClick={() => setPopupIsOpen(true)}
+          className="navbar__signup"
+          onClick={() => setSignupIsOpen(true)}
         >
           Get started
         </button>
       </nav>
 
-      {popupIsOpen && (
-        <Popup setPopupIsOpen={setPopupIsOpen}>
+      {signupIsOpen && (
+        <Popup setSignupIsOpen={setSignupIsOpen}>
           <SignupForm />
+        </Popup>
+      )}
+
+      {signinIsOpen && (
+        <Popup setSigninIsOpen={setSigninIsOpen}>
+          <SigninForm />
         </Popup>
       )}
     </header>
