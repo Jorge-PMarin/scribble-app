@@ -120,7 +120,7 @@ export default function SettingsPage() {
             />
           </div>
 
-          <Button buttonText={'Update'} />
+          <Button>Update</Button>
         </form>
       </main>
       <SideBar />

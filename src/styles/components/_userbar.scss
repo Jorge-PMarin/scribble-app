@@ -1,4 +1,4 @@
-@use '../base/variables';
+@use "../base/variables";
 
 .userbar {
   background-color: #fff;
@@ -7,6 +7,7 @@
   align-items: center;
   padding: 1.5rem 6%;
   border-bottom: 0.1rem solid variables.$light-gray;
+  position: relative;
 
   a:visited,
   a:link {
@@ -14,7 +15,7 @@
     text-decoration: none;
   }
 
-  &__right {
+  &__left {
     &__logo {
       font-size: 3rem;
       color: variables.$very-dark-blue;
@@ -33,7 +34,7 @@
     border: 0.1rem solid variables.$light-gray;
   }
 
-  &__left {
+  &__right {
     display: flex;
     align-items: center;
     & > *:not(:last-child) {
@@ -56,24 +57,13 @@
 
     &__user {
       display: flex;
-      align-items: center;
-      gap: 1rem;
-      cursor: pointer;
-
-      & i {
-        color: lighten(variables.$light-brown, 20%);
-
-        &:hover {
-            color: variables.$light-brown;
-        }
-      }
     }
   }
 }
 
 @media (min-width: 550px) {
   .userbar {
-    &__right {
+    &__left {
       display: flex;
       align-items: center;
       &__search {
@@ -101,7 +91,7 @@
       }
     }
 
-    &__left {
+    &__right {
       &__search {
         display: none;
       }

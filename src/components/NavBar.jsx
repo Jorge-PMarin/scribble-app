@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Popup from "./Popup";
 import SignupForm from "./signupForm";
 import SigninForm from "./SigninForm";
@@ -10,22 +11,22 @@ export default function NavBar() {
   return (
     <header className="navbar">
       <div className="navbar__left">
-        <a href="#" className="navbar__left__logo">
+        <Link to="/" className="navbar__left__logo">
           <i className="fa-sharp fa-solid fa-mug-saucer"></i>
           <span className="navbar__left__text">ScribbleHub</span>
-        </a>
+        </Link>
       </div>
 
       <nav className="navbar__right">
         <ul className="navbar__right__list">
           <li className="navbar__right__item">
-            <a href="#">Our story</a>
+            <Link to="notFound">Our story</Link>
           </li>
           <li className="navbar__right__item">
-            <a href="#">Membership</a>
+            <Link to="notFound">Membership</Link>
           </li>
           <li className="navbar__right__item">
-            <a href="#">Write</a>
+            <Link to="notFound">Help</Link>
           </li>
           <li className="navbar__right__item">
             <button

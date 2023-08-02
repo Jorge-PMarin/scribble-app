@@ -2,13 +2,20 @@
 
 .sidebar {
   display: none;
+  
   &__categories {
+    
     padding: 3rem 2rem;
     border-bottom: 0.1rem solid variables.$dark-blue;
 
     &__title {
       color: variables.$very-dark-blue;
       margin-bottom: 1rem;
+    }
+
+    &__list {
+      margin: 0;
+      padding: 0;
     }
   }
 }
